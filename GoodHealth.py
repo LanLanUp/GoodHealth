@@ -5,7 +5,7 @@ import json
 import re
 import datetime
 import time
-import pytz as pytz
+import pytz
 import sys
 import os
 import getopt
@@ -99,6 +99,10 @@ class GoodHealth(object):
         Raises:
             RuntimeError: post or validate failed.
         """
+        if self.get_status():
+            print('[ GoodHealth ] You have reported today!')
+            return
+
         start_page = self.session.get(
             'https://webvpn.neu.edu.cn/http/77726476706e69737468656265737421f5ba5399373f7a4430068cb9d6502720645809/mobile/notes/create',
             verify=False,
@@ -158,8 +162,9 @@ class GoodHealth(object):
             print(post_notes.text)
             raise RuntimeError('[ GoodHealth ] Post failure.')
 
-        if self.get_status:
+        if self.get_status():
             print('[ GoodHealth ] All done!')
+            return
         else:
             raise RuntimeError('[ GoodHealth ] No record was detected!')
 
