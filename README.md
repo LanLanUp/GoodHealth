@@ -15,12 +15,18 @@
 
 2. 点击仓库的`Settings`，找到`Secrets`，点击`New repository secret`，新增如下两个值：
 
-   | Name       | Value          |
-   | ---------- | -------------- |
-   | `USERNAME` | 您的学号       |
-   | `PASSWORD` | 您的一网通密码 |
+   | Name       | Value                                                        |
+   | ---------- | ------------------------------------------------------------ |
+   | `USERNAME` | 您的学号                                                     |
+   | `PASSWORD` | 您的一网通密码                                               |
+   | `CITY`     | 改变城市，格式如`中国,辽宁省,沈阳市`                         |
+   | `FORCE`    | 即使当天已经上报仍然重新上报                                 |
+   | `VPN`      | 是否使用NEU的webvpn，参数为：`OFF`不使用；`ON`使用；`FIRST`优先使用， |
+   | `SENDKEY`  | 使用`server酱`发送上报错误信息，见 https://sct.ftqq.com/     |
 
 3. 将在早晨0点左右自动食用。想食用时间可自行修改`.github/workflows/action.yml`文件。
+
+3. 支持多账号上报，`USERNAME`和`PASSWORD`使用`,`隔开
 
 ### 说明
 

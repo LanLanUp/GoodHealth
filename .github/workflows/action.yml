@@ -25,6 +25,10 @@ jobs:
 
       - name: "GoodHealth"
         env:
-          USERNAME: ${{ secrets.USERNAME }}
-          PASSWORD: ${{ secrets.PASSWORD }}
+          GHUSERNAME: ${{ secrets.USERNAME }}
+          GHPASSWORD: ${{ secrets.PASSWORD }}
+          GHCITY: ${{ secrets.CITY }}
+          GHFORCE: ${{ secrets.FORCE }}
+          GHVPN: ${{ secrets.VPN }}
+          GHSENDKEY: ${{ secrets.SENDKEY }}
         run: python GoodHealth.py
