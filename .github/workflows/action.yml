@@ -2,7 +2,7 @@ name: Health Report
 
 on:
   schedule:
-    - cron: "00 16 * * *"
+    - cron: "00 00 * * *"
   push:
     branches: [main]
 
