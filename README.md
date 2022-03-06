@@ -4,7 +4,7 @@
 <img src="https://img.shields.io/badge/GoodHealth-green.svg" title="GoodHealth">
 <img src="https://img.shields.io/badge/Author-Anonymous-red.svg" title="Author">
 <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" title="LICENSE"></a>
-<a href="https://github.com/jungheil/GoodHealth/actions/workflows/action.yml"><img src="https://github.com/jungheil/GoodHealth/actions/workflows/action.yml/badge.svg?event=schedule" title="Schedule"></a>
+<a href="https://github.com/LanLanUp/GoodHealth/actions/workflows/action.yml"><img src="https://github.com/jungheil/GoodHealth/actions/workflows/action.yml/badge.svg?event=schedule" title="Schedule"></a>
 </p>
 
 东大学生每日一用，确保健康。
